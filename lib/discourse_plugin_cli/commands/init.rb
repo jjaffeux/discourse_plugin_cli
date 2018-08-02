@@ -18,8 +18,8 @@ module DiscoursePluginCli
 
     def self.options
       [
-        ["--stylesheet", "Don't add stylesheet."],
-        ["--job", "Don't add job."]
+        ["--stylesheet", "Stylesheet support (default: true). Use --no-stylesheet to disable."],
+        ["--job", "Sidekiq job support (default: true). Use --no-job to disable."]
       ].concat(super)
     end
 
